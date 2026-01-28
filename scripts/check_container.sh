@@ -1,3 +1,5 @@
+# Simple container monitoring script for AWS EC2 environments
+
 #!/bin/bash
 
 CONTAINER_NAME="docker-lab-nginx"

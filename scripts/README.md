@@ -1,0 +1,1 @@
+This directory contains operational scripts for container monitoring and automation.
