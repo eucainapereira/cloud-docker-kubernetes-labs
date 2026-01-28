@@ -37,10 +37,14 @@ Nginx (official image)
 AWS Cloud (Amazon EC2)
 
 📂 Directory Structure
-docker/
+ docker/
 ├── Dockerfile
 ├── README.md
-└── index.html
+├── index.html
+└── images/
+    ├── ec2-running.png
+    ├── docker-ps.png
+    └── app-running.png
 
 📄 Dockerfile
 
@@ -99,6 +103,14 @@ How to map ports between host and container
 Importance of Dockerfile for environment standardization
 
 Basic deployment of containerized applications on AWS
+
+🖼️ Deployment Evidence
+
+The images below show the application running on an AWS EC2 instance, including the instance status, Docker container execution, and the application exposed via public IP.
+
+![EC2 Running](images/ec2-running.png)
+![Docker Container Running](images/docker-ps.png)
+![Application Running](images/app-running.png)
 
 📌 Possible Improvements
 
@@ -221,6 +233,14 @@ Mapeamento de portas entre host e container
 Uso do Dockerfile para padronização de ambientes
 
 Deploy básico de aplicações containerizadas na AWS
+
+🖼️ Evidências do Deploy
+
+As imagens abaixo demonstram a aplicação em execução em uma instância AWS EC2, incluindo o status da instância, a execução do container Docker e o acesso à aplicação via IP público.
+
+![EC2 Running](images/ec2-running.png)
+![Docker Container Running](images/docker-ps.png)
+![Application Running](images/app-running.png)
 
 📌 Possíveis melhorias
 
