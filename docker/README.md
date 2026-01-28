@@ -92,6 +92,21 @@ Docker containers running on a virtual machine
 
 Ideal for real-world Cloud and DevOps practice
 
+🔄 Container Auto-Restart & Monitoring (Cron + Shell Script)
+
+To simulate a production-like environment, an automated monitoring mechanism was implemented to ensure container availability.
+
+A Bash script periodically checks:
+- If the Docker service is running
+- If the Nginx container is active
+
+If Docker is stopped, the service is started automatically.
+If the container is not running, it is restarted.
+
+The script is executed via cron and generates logs for observability and troubleshooting.
+
+✔️ This approach improves reliability and reduces downtime, simulating real-world Cloud and DevOps operational practices.
+
 🧠 Key Learnings
 
 Difference between image and container
@@ -221,6 +236,21 @@ Ambiente Linux real em nuvem
 Execução de containers Docker em máquina virtual
 
 Ideal para simular cenários reais de Cloud e DevOps
+
+🔄 Monitoramento e Auto-Restart do Container (Cron + Shell Script)
+
+Para simular um ambiente mais próximo de produção, foi implementado um mecanismo automatizado de monitoramento para garantir a disponibilidade do container.
+
+Um script em Bash verifica periodicamente:
+- Se o serviço Docker está em execução
+- Se o container Nginx está ativo
+
+Caso o Docker esteja parado, o serviço é iniciado automaticamente.
+Caso o container não esteja rodando, ele é reiniciado.
+
+O script é executado via cron e gera logs para observabilidade e troubleshooting.
+
+✔️ Essa abordagem aumenta a confiabilidade do ambiente e reduz downtime, simulando práticas reais de Cloud e DevOps.
 
 🧠 Aprendizados obtidos
 
